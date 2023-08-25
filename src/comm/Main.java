@@ -11,6 +11,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		Menu m = new Menu();
 		m.run(sc);
+		System.out.println("완료");
 	}
 
 }
