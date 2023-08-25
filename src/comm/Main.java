@@ -1,6 +1,8 @@
-package addr;
+package comm;
 
 import java.util.Scanner;
+
+import comm.member.Menu;
 
 public class Main {
 
@@ -10,5 +12,5 @@ public class Main {
 		Menu m = new Menu();
 		m.run(sc);
 	}
-	
+
 }

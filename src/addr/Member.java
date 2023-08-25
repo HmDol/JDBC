@@ -12,11 +12,6 @@ public class Member implements Serializable {
 	public Member() {
 		
 	}
-	
-	@Override
-	public String toString() {
-		return "Member [name=" + name + ", tel=" + tel + ", address=" + address + "]";
-	}
 
 	//초기화하는 생성자
 	public Member(String name, String tel, String address) {
@@ -24,6 +19,11 @@ public class Member implements Serializable {
 		this.name = name;
 		this.tel = tel;
 		this.address = address;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [name=" + name + ", tel=" + tel + ", address=" + address + "]";
 	}
 
 	public String getName() {

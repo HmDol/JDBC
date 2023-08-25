@@ -7,20 +7,20 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import conn.DBConnect;
-import emp.Emp;
+
 
 //DAO.Member를 여러개 담을 수 잇는 배열 생성
 //그 배열에 Member객체를 추가, 검색, 수정, 삭제.... 등의 작업 클래스
 
-public class MemberDAO {
+public class MemberDao {
 	private DBConnect dbconn;
 	
-	public MemberDAO() {
+	public MemberDao() {
 		dbconn = DBConnect.getInstance();
 	}
 	
 	
-	public void insert(Member m) {// emp:사번, 이름, 부서, 입사일, salary
+	public void insert(Member m) {// addr : name , tel , address
 		// 1. db 연결
 		Connection conn = dbconn.conn();
 
