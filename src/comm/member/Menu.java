@@ -56,7 +56,7 @@ public class Menu {
 				break;
 			case 4:
 				mservice.delMember();
-				break;
+				return;
 			case 5:
 				boardRun(sc);
 				break;
@@ -72,7 +72,8 @@ public class Menu {
 		boolean flag = true;
 		int m = 0;
 		while (flag) {
-			System.out.println("1.글작성 2.번호로검색 3.작성자로검색 4.제목으로검색 5.전체검색 6.수정 7.삭제 8.종료");
+			System.out.println("1.글작성 2.번호로검색 3.작성자로검색 4.제목으로검색 "
+					+ "5.전체검색 6.수정 7.삭제 8.종료");
 			m = sc.nextInt();
 			switch (m) {
 			case 1:
@@ -87,7 +88,7 @@ public class Menu {
 			case 4:
 				bservice.getByTitleBoard(sc);
 				break;
-			case 5: 
+			case 5:
 				bservice.getAll();
 				break;
 			case 6:
@@ -102,6 +103,7 @@ public class Menu {
 			}
 		}
 	}
+
 	public void run(Scanner sc) {
 		if (MemberService.loginId == null) {//로그인 안된 상태
 			run1(sc);
@@ -110,6 +112,7 @@ public class Menu {
 		}
 	}
 }
+
 
 
 
